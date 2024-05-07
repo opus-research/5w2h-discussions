@@ -135,7 +135,6 @@ def classify_text_with_completions(text):
             model="gpt-3.5-turbo",
             logprobs=True,
             top_logprobs=4
-            # NUMERO DE CLASSES A SE CONSIDERAR
         )
 
         classification = API_RESPONSE.choices[0].message.content
